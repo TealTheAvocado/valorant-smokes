@@ -1,13 +1,19 @@
 body {
-    color: #161616;
+    background-color: #1C1C1C;
+    color: #E31C25;
     margin-left: 1em;
     margin-right: 1em;
+    width: 100;
+
+}
+* {
+  box-sizing: border-box;
 }
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
     float: left;
     width: 25%;
-    padding: 10px;
+    padding: 5px;
   }
   
   /* Clear floats after image containers */
@@ -15,4 +21,8 @@ body {
     content: "";
     clear: both;
     display: table;
+  }
+
+  h1 {
+    text-align: center;
   }
