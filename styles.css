@@ -1,7 +1,7 @@
 body {
     background-color: #1C1C1C;
     color: #E31C25;
-    margin-left: 1em;
+    margin-left: 2em;
     margin-right: 1em;
     width: 100;
 
@@ -9,19 +9,20 @@ body {
 * {
   box-sizing: border-box;
 }
-/* Three image containers (use 25% for four, and 50% for two, etc) */
+.row {
+  display: flex;
+}
+
 .column {
-    float: left;
-    width: 25%;
-    padding: 5px;
+  flex: 25%;
+  padding: 5px;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
   }
-  
-  /* Clear floats after image containers */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+}
 
   h1 {
     text-align: center;
