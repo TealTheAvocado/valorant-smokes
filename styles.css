@@ -10,29 +10,35 @@ body {
 * {
   box-sizing: border-box;
 }
-.row {
-  display: flex;
-}
 
 .columnm {
-  flex: 25%;
-  padding: 5px;
+  display: table-cell;
+  width: 25%;
+  vertical-align: top;
 }
+
 .columna {
-  flex: 25%;
-  padding: 5px;
+  display: table-cell;
+  width: 20%;
+  vertical-align: top;
 }
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
+.row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
     text-align: center;
   }
   
+h2 {
+  font-size: 2vw;
+}
   /* CSS */
 button {
   font-family: 'Courier New', monospace;
