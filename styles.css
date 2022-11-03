@@ -1,5 +1,7 @@
 body {
-    color: #161616
+    color: #161616;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
