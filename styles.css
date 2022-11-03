@@ -1,9 +1,10 @@
 body {
     background-color: #1C1C1C;
     color: #E31C25;
-    margin-left: 2em;
+    margin-left: 1em;
     margin-right: 1em;
     width: 100;
+    font-family: 'Courier New', monospace;
 
 }
 * {
@@ -13,7 +14,11 @@ body {
   display: flex;
 }
 
-.column {
+.columnm {
+  flex: 25%;
+  padding: 5px;
+}
+.columna {
   flex: 25%;
   padding: 5px;
 }
@@ -24,6 +29,53 @@ body {
   }
 }
 
-  h1 {
+h1 {
     text-align: center;
+  }
+  
+  /* CSS */
+button {
+  font-family: 'Courier New', monospace;
+    align-items: center;
+    background-color: white;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #E31C25;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+  }
+  
+  button:hover,
+  button:focus { 
+    background-color: darkgrey;
+    color: #ffffff;
+  }
+  
+  button:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+  }
+  
+  button:disabled { 
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
   }
