@@ -88,3 +88,7 @@ button {
   .right {
     float: right;
   }
+
+  a {
+    color: lightskyblue;
+  }
